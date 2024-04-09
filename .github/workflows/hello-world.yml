@@ -62,10 +62,10 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with: 
           path: "./out"
-      - name: ls
+      - name: explore out
         run: |
           pwd
-          ls
+          ls out
       - name: deploy
         id: deployment
         uses: actions/deploy-pages@v1
